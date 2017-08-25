@@ -1,0 +1,252 @@
+body, .container {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    background-color: #f0f0f0;
+}
+
+/*==========LOGIN==========*/
+#container_login { margin-top: 200px; }
+
+#input_login, #input_senha {
+    height: 38px;
+    width: 350px;
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+#input_login { margin-left: 11px; }
+#input_senha { margin-left: 5px; }
+
+.button {
+    border-style: double;
+    background-color: #32cd32;
+    border-color: #f0f0f0;
+    border-width: 8.1px;
+    width: 110px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    font-size: 20px;
+    outline: none; 
+    cursor: pointer;
+}
+
+/*==========MENU==========*/
+#container_menu { margin-top: 120px; }
+
+#container_menu h1 { 
+    color: #0036f7; 
+    font-style: italic;
+    font-weight: normal;
+}
+
+#container_menu > input { 
+    padding: 35px; 
+    outline: none;
+    cursor: pointer; 
+}
+
+#button_usuario { margin-right: 25%; }
+#button_sair { margin-left: 5%; }
+#dialog-sobre { font-size: 17.5px; }
+#dialog-usuario { text-align: center; }
+
+#dialog-usuario input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#login_usuario { width: 200px; }
+#senha_usuario { width: 200px; }
+#confirm_senha_usuario { width: 180px; }
+
+/*==========VENDAS==========*/
+#container_venda { width: 100%; }
+
+#container_venda .button {
+    outline: none; 
+    cursor: pointer;
+}
+ 
+#menu_topo_venda { 
+    float: left; 
+    margin-left: 2.8%;
+    font-size: 20px;
+}
+
+ul.menu_tree > li { float: left; }
+ul.menu_tree > li > div > ul { left: 39px; }
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    cursor: default;
+}
+
+.div_menu_tree { 
+    border: 1px solid black;
+    background-color: #f2f2f2;
+    width: 152px;
+    height: 70px;
+    position: absolute;
+    text-align: left;
+    box-shadow: 5px 5px 10px #888888;
+    display: none;
+}
+
+.menu_tree > li > div > ul > li {
+    width: 150px;
+    padding: 3px;
+    position: relative;
+}
+
+.menu_tree > li > div > ul > li:hover {
+    background-color: #D8D8D8;
+    cursor: pointer;
+}
+
+li:hover > div { display: block; }
+
+#input_codigo, #input_qtd { 
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+#button_search { 
+    display: inline;
+    width: 80px; 
+    height: 53px;
+}
+
+#button_add { 
+    float: right; 
+    margin-right: 2.4%;
+    height: 53px;
+    width: 120px;
+}
+
+#button_search, #button_add { background-color: #00bfff; }
+
+#container_venda span {
+    float: left;
+    margin-left: 2.6%;
+}
+
+#container_venda span + span { margin-top: 5px; }
+
+#container_tabela_vendas {
+    border: 1px solid black;
+    height: 350px;
+    width: 95%;
+    clear: both;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    background-color: #fcfcfc;
+    text-align: center;
+    font-size: 22px;
+}
+
+th { 
+    text-align: center; 
+    font-weight: normal; 
+}
+
+tbody { width: 100%; }
+
+#container_venda p {
+    color: red;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+#buttons { margin-top: -20px; }
+
+#button_cancelar_venda  {
+    float: left;
+    background-color: red;
+    color: white;
+    margin-left: 2.5%;
+    height: 55px;
+    width: 120px;
+}
+
+#button_confirmar_venda { 
+    width: 130px; 
+    height: 55px;
+    margin: 0 auto;
+}
+
+/*==========ESTOQUE==========*/
+#container_estoque { width: 100%; }
+
+#container_estoque .button {
+    outline: none; 
+    cursor: pointer;
+}
+ 
+#menu_topo_estoque { 
+    float: left; 
+    margin-left: 2.6%;
+    font-size: 20px;
+}
+
+#menu_topo_estoque span + span { 
+    float: right; 
+    margin-left: 40px;
+}
+
+#container_tabela_estoque {
+    border: 1px solid black;
+    height: 380px;
+    width: 95%;
+    clear: both;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#input_produto { 
+    width: 80%;
+    float: left;
+    margin-left: 2.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#button_buscar { 
+    float: right; 
+    margin-right: 2.3%;
+    height: 52px;
+    margin-top: -5px;
+}
+
+#li_produtos { margin-left: 40px; }
+#dialog-cadastrar_produto { text-align: left; }
+
+#dialog-cadastrar_produto input { 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+#cod_novo_produto { width: 120px; }
+#nome_novo_produto { width: 320px; }
+#preco_novo_produto { width: 200px; }
+#qtd_novo_produto { width: 100px; }
+#div_menu_tree_produtos { height: 104px; }
+
+#button_confirmar_estoque {
+    width: 140px;
+    margin-top: -15px;
+}

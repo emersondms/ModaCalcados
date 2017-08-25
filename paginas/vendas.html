@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Nova Venda - Moda Calçados</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<script src="../bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/scripts_vendas_estoque.js"></script>
+</head>
+
+<body>
+
+	<div id="container_venda" class="container">
+	  	<div id="menu_topo_venda">
+	  		<ul class="menu_tree">
+	  			<li>Arquivo
+	  				<div class="div_menu_tree">
+		  				<ul>
+		  					<li class="li_menu">Menu Principal</li>
+		  					<li class="li_sair">Sair</li>
+		  				</ul>	
+	  				</div>
+	  			</li>
+	  		</ul>	
+	  	</div><br><br>
+	  	<div>
+		  	<span>
+		  		Código: <input type="text" id="input_codigo">
+		  		<input type="button" class="btn button" id="button_search" value="=>">
+		  	</span>
+		  	<span id="span_qtd" hidden>
+		  		Quantidade: <input type="number" id="input_qtd" name="input_qtd" min="1" max="100" value="1"> 
+		  	</span>
+	  		<input type="button" class="btn button" id="button_add" value="Adicionar">
+	  	</div><br><br>
+	  	<div id="container_tabela_vendas">
+	  		<table id="tabela_vendas" class="table table-hover">
+				<thead>
+					<div>
+					    <th>Código</th>
+					    <th>Produto</th>
+					    <th>Quantidade</th>
+					    <th>Preço</th>
+					    <th>Subtotal</th>
+					</div>
+			  	</thead>
+			  	<tbody></tbody>
+			</table>		
+	  	</div>
+	  	<p id="total">Total: R$</p><br>
+	  	<div id="buttons">
+	  		<input type="button" class="btn button" id="button_cancelar_venda"  value="Cancelar">
+	  		<input type="button" class="btn button" id="button_confirmar_venda" value="Confirmar">
+	  	</div>
+	</div>
+	
+</body>
+</html>

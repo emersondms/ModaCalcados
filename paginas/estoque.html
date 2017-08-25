@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Estoque - Moda Calçados</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<script src="../bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="../js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+	<script src="../js/scripts_vendas_estoque.js"></script>
+</head>
+
+<body>
+
+	<div id="container_estoque" class="container">
+	  	<div id="menu_topo_estoque">
+	  		<ul class="menu_tree">
+	  			<li>Arquivo
+	  				<div class="div_menu_tree">
+		  				<ul>
+		  					<li class="li_menu">Menu Principal</li>
+		  					<li class="li_sair">Sair</li>
+		  				</ul>	
+	  				</div>
+	  			</li>
+	  			<li id="li_produtos">Produtos
+	  				<div id="div_menu_tree_produtos" class="div_menu_tree">
+		  				<ul>
+		  					<li id="li_cadastrar">Cadastrar</li>
+		  					<li id="li_editar">Editar</li>
+		  					<li id="li_remover">Remover</li>
+		  				</ul>	
+	  				</div>
+	  			</li>
+	  		</ul>	
+	  	</div><br><br>
+	  	<div>
+			<input type="text" id="input_produto">
+		  	<input type="button" class="btn button" id="button_buscar" value="Buscar">
+	  	</div><br><br>
+	  	<div id="container_tabela_estoque">
+	  		<table id="tabela_produtos" class="table table-hover">
+				<thead>
+					<div>
+					    <th>Código</th>
+					    <th>Produto</th>
+					    <th>Preço - R$</th>
+					    <th>Quantidade</th>
+					</div>
+			  	</thead>
+			  	<tbody></tbody>
+			</table>	
+		</div><br>
+	  	<input type="button" class="btn button" id="button_confirmar_estoque" value="Confirmar">
+	</div>
+
+	<div id="dialog-cadastrar_produto" title="Novo Produto">
+		<form id="form_cadastrar_produto">
+		    Código: <input type="text" id="cod_novo_produto"><br><br>
+		    Nome: <input type="text" id="nome_novo_produto"><br><br>
+		    Preço: <input type="text" id="preco_novo_produto" placeholder="R$" onkeypress="return somenteNumeros(event)"><br><br>
+		    Quantidade: <input type="number" id="qtd_novo_produto" min="1" max="100">
+		</form>
+	</div>
+	
+</body>
+</html>
